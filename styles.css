@@ -1,0 +1,91 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f8b500, #fceabb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+#container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+/* Title Styling */
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Game Area Styling */
+#game {
+    font-size: 2em;
+    letter-spacing: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #f8b500;
+    border-radius: 10px;
+    background-color: #fceabb;
+}
+
+/* Input Section */
+#inputSection {
+    margin: 20px 0;
+}
+
+#inputSection input {
+    font-size: 1.2em;
+    padding: 5px;
+    margin-right: 10px;
+    border: 2px solid #f8b500;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+#inputSection button {
+    background-color: #f8b500;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#inputSection button:hover {
+    background-color: #ff9800;
+}
+
+p {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Add some interaction with animations */
+#game span {
+    display: inline-block;
+    padding: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+#game span.correct {
+    color: green;
+    transform: scale(1.2);
+}
+
+#game span.wrong {
+    color: red;
+    transform: scale(0.8);
+}

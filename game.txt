@@ -1,0 +1,6 @@
+//3 modes beginning,medium,expert then a button play
+//clicking on button store in the local storage
+// missing words gaps -n and the alphabet ,chances of the game depends the mode
+// beginning -n*3,medium-n*2,expert-n
+if word matches then win else lose
+we have a file with words and then 

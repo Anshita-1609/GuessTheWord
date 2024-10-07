@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Game Mode</title>
+    <style>
+        body {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            margin: 200px;
+            padding: 50;
+            height: 100vh;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            background: url('background.jpg') no-repeat center center/cover; 
+            color:#ff3b2f; 
+        }
+        #container {
+            background: beige;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            padding: 50px;
+            text-align: center;
+            width: 400px;
+            height: max-content;
+            position: relative;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Radio button styles and alignment */
+        .mode-option {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 10px 0;
+        }
+
+        input[type="radio"] {
+            transform: scale(1.5);
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        label {
+            font-size: 1.2em;
+            color: black;
+            font-size: larger;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Hover effect for labels */
+        label:hover {
+            color: #d61334;
+        }
+
+        /* Play button */
+        button {
+            background-color: #1d3eaa;
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #ff3b2f;
+            transform: translateY(-3px);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        input[type="radio"]:checked + label {
+            font-weight: bolder;
+            color:#1d3eaa ;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="mode">
+            <h1>Select Mode</h1>
+        </div>
+
+        <div class="mode-option">
+            <input type="radio" name="mode" id="beg">
+            <label for="beg">Beginning</label>
+        </div>
+
+        <div class="mode-option">
+            <input type="radio" name="mode" id="Med">
+            <label for="Med">Medium</label>
+        </div>
+
+        <div class="mode-option">
+            <input type="radio" name="mode" id="Expert">
+            <label for="Expert">Expert</label>
+        </div>
+
+        <button>Play</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
